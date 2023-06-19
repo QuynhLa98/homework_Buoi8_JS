@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.3.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Link fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link style -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <section class="homework">
+        <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <h1>Homework Buoi 8</h1>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Nhập số n</h4>
+              <input id="nhapSoN" type="number" placeholder="Nhập số n" />
+            </div>
+            <button id="themSo" class="btn btn-primary">Thêm số</button>
+            <div id="soN" class="card-footer text-muted">
+              <i class="fa-solid fa-hand-point-right"></i>
+            </div>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Tổng số dương
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="tongSoDuong" class="btn btn-success">
+                        Tính tổng
+                      </button>
+                    </div>
+                    <div id="resultTongSoDuong" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Đếm số dương
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="demSoDuong" class="btn btn-success">
+                        Đếm số
+                      </button>
+                    </div>
+                    <div id="resultDemSoDuong" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Tìm số nhỏ nhất
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="timSoNhoNhat" class="btn btn-success">
+                        Tìm số nhỏ nhất
+                      </button>
+                    </div>
+                    <div id="resultSoNhoNhat" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Tìm số dương nhỏ nhất
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="timSoDuongNhoNhat" class="btn btn-success">
+                        Tìm số dương nhỏ nhất
+                      </button>
+                    </div>
+                    <div
+                      id="resultSoDuongNhoNhat"
+                      class="card-footer text-muted"
+                    >
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Tìm số chẵn cuối cùng trong mảng
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="timSoChanCuoi" class="btn btn-success">
+                        Tìm số chẵn cuối
+                      </button>
+                    </div>
+                    <div id="resultSoChanCuoi" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSix"
+                >
+                  Đổi chỗ 2 giá trị trong mảng theo vị trí
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <input
+                        id="soViTri1"
+                        type="number"
+                        placeholder="Nhập số vị trí 1"
+                      />
+                      <input
+                        id="soViTri2"
+                        type="number"
+                        placeholder="Nhập số vị trí 2"
+                      />
+                      <button id="doiCho" class="btn btn-success">
+                        Đổi chỗ
+                      </button>
+                    </div>
+                    <div id="outputDoiCho" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSeven"
+                >
+                  Sắp xếp mảng theo thứ tự tăng dần
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="sapXep" class="btn btn-success">
+                        Sắp xếp
+                      </button>
+                    </div>
+                    <div id="resultSapXep" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEight"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseEight"
+                >
+                  Tìm số nguyên tố đầu tiên trong mảng
+                </button>
+              </h2>
+              <div
+                id="flush-collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="timNguyenTo" class="btn btn-success">
+                        Tìm nguyên tố
+                      </button>
+                    </div>
+                    <div id="resultTimNguyenTo" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseNine"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseNine"
+                >
+                  Đếm số nguyên
+                </button>
+              </h2>
+              <div
+                id="flush-collapseNine"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <input
+                        id="nhapSoNguyen"
+                        type="number"
+                        placeholder="Nhập số nguyên"
+                      />
+                      <button id="nhapSo" class="btn btn-success">
+                        Nhập số
+                      </button>
+                    </div>
+                    <div id="resultnhapSoNguyen" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                    <button id="demSoNguyen" class="btn btn-primary">
+                      Đếm số nguyên
+                    </button>
+                    <div id="resultDemSoNguyen" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTen"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTen"
+                >
+                  So sánh số lượng số dương và số lượng số âm
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTen"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <button id="soSanh" class="btn btn-success">
+                        So Sánh
+                      </button>
+                    </div>
+                    <div id="resultSoSanh" class="card-footer text-muted">
+                      <i class="fa-solid fa-hand-point-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- JavaScript Libraries -->
+    <script src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
